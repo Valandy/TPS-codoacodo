@@ -1,0 +1,57 @@
+.centrado {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+.lista{
+    display: flex;
+    justify-content: space-around;
+    background: chocolate;
+}
+.item:hover{
+    background: rgb(2, 240, 248);
+}
+.item{
+    display: block;
+    padding: .6em 3em;
+}
+.info {
+    display:flex;
+    flex-direction: column;
+}
+.ulinfo {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.ullista{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.ullista li{
+    padding: 10px;
+    transition: font-size 1s;
+}
+
+.ullista li:hover {
+    transition: font-size 1s;
+    font-size: 36px;
+}
+
+@media screen and (max-width:768px){
+    .centrado {
+        margin:auto;
+        padding:auto;
+    }
+    .ulinfo {
+        flex-wrap: wrap;
+    }
+    .ullista{
+        flex-direction: column;
+    }
+    .ullista li{
+        padding: 0;
+        transition: font-size 1s;
+    }
+
+}

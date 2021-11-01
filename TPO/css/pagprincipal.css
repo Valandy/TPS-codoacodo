@@ -1,0 +1,171 @@
+
+.centrado {
+    margin: 1em auto;
+    padding: 1em;
+}
+.categorias {
+    display:flex;
+    justify-content: space-evenly;
+}
+article {
+    padding: 10px;
+}
+article:hover {
+   background: seagreen;
+}
+.iframeycontacto {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+
+}
+.iframe {
+    flex: 1 1 auto;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+.titulocontacto{
+    flex:0.5
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    flex:4
+}
+.nombre{
+    flex:1 1 auto;
+    height: 20px;
+}
+.apellido{
+    flex:1 1 auto;
+    height: 20px;
+}
+.email{
+    flex:1 1 auto;
+    height: 20px;
+}
+.mensaje {
+    flex:1 1 auto;
+    height: 100px;
+    width:50em;
+    margin-left: 5px;
+}
+input{
+    margin: 5px;
+    width: 50em;
+}
+.btn{
+    flex:1 1 auto;
+    height: 20px;
+    width: 25em;
+}
+@media screen and (max-width:768px){
+    .iframeycontacto {
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+    .centrado {
+        margin:none;
+        padding: none;
+    }
+    .categorias {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    article {
+        padding: none;
+    }
+    .nombre{
+        flex:1 1 auto;
+        height: 20px;
+    }
+    .apellido{
+        flex:1 1 auto;
+        height: 20px;
+    }
+    .email{
+        flex:1 1 auto;
+        height: 20px;
+    }
+    .mensaje {
+        flex:1 1 auto;
+        height: 100px;
+        width: 15em;
+        margin-left: 5px;
+    }
+    input{
+        margin: 5px;
+        width: 15em;
+    }
+    .btn{
+        flex:1 1 auto;
+        height: 20px;
+        width: 10em;
+    }
+}
+@media screen and (max-width:1440px) {
+    .centrado {
+        padding-left: 5%;
+    }
+}
+@media screen and (max-width:1024px){
+    .centrado {
+        padding-left: 5%;
+    }
+    .iframeycontacto {
+        flex-wrap: wrap;
+    }
+    .mensaje {
+        width:80%
+    }
+    input{
+        width:80%
+    }
+    .btn{
+        width:30%
+    }
+    @media screen and (max-width:768px){
+        .iframeycontacto {
+            display: flex;
+            flex-direction: column;
+            align-content: stretch;
+            justify-content: center;
+            flex-wrap: wrap;
+        
+        }
+        .centrado {
+            margin:none;
+            padding: none;
+        }
+        .categorias {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        article {
+            padding: none;
+        }
+    
+        .mensaje {
+            width:auto;
+        }
+        input{
+           width:auto;
+        }
+        .btn{
+            width:50%
+        }
+}
+
+
+
+
+
